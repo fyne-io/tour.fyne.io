@@ -30,7 +30,22 @@ html, body {
 }
 
 #code pre {
+  padding: 0;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+#code pre {
   font-size: smaller;
+}
+
+#code pre table, #code pre figure, #code pre td {
+  padding: 0;
+  border: none;
+}
+
+#code pre td.gutter {
+  border-right: 1px solid #c0c0c0;
 }
 
 #words .panel, #code .panel {
