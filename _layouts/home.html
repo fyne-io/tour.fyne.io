@@ -1,10 +1,12 @@
-<!doctype HTML5>
+<!doctype HTML>
 <html>
   <head>
-    <title>Fyne Tour</title>
+    <title>{% if page.url != "/" %}{{ page.title }} | {% endif %}Fyne Tour</title>
 
     <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="/css/home.css" type="text/css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
