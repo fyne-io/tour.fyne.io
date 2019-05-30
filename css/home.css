@@ -1,0 +1,60 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+#words {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#code {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: #f0f0f0;
+  border-left: 5px solid #c0c0c0;
+}
+
+#code pre {
+  font-size: smaller;
+}
+
+#words .panel, #code .panel {
+  padding: 5pt;
+  padding-top: 46pt;
+}
+
+#tour-nav {
+  z-index: 5;
+  width: 50%;
+  text-align: center;
+}
+
+#tour-nav a {
+  margin: auto;
+  font-weight: bold;
+}
+
+/* fixing for the theme styles */
+.site-header {
+  z-index: 10;
+  background-color: #fff;
+}
+
+.site-header .trigger {
+  margin-top: 15px;
+}

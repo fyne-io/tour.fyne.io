@@ -1,0 +1,36 @@
+<!doctype HTML5>
+<html>
+  <head>
+    <title>Fyne Tour</title>
+
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/css/home.css" type="text/css" />
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    <div id="content">
+      <div id="words">
+        <div class="panel">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </div>
+      </div>
+      <div id="code">
+        <div class="panel">
+          <h1>Example Code</h1>
+          <pre>
+            {{- page.code -}}
+          </pre>
+        </div>
+      </div>
+    </div>
+
+    <footer id="tour-nav">
+      <a href="#">&lt;</a>
+      1/1
+      <a href="#">&gt;</a>
+    </footer>
+  </body>
+</html>
