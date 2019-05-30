@@ -49,6 +49,31 @@ html, body {
   font-weight: bold;
 }
 
+/* mobile layout */
+@media (max-width: 800px) {
+#content {
+  height: auto;
+}
+
+#words, #code {
+  width: 100%;
+  height: auto;
+
+  position: relative;
+
+  border-left: 0;
+}
+
+#words .panel, #code .panel {
+  padding-top: 0;
+}
+
+#tour-nav {
+  width: 100%;
+}
+}
+
+
 /* fixing for the theme styles */
 .site-header {
   z-index: 10;
