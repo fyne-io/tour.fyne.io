@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="/css/home.css" type="text/css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% assign jsCode = page.code | newline_to_br | replace: '<br />', '\n\\' | replace: '"', '\"' %}
+    <script language="JavaScript">
+      function copyCode() {
+        var textArea = document.createElement("textarea");
+        textArea.value = "{{- jsCode -}}";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+
+      }
+    </script>
   </head>
 
   <body>
@@ -21,8 +34,9 @@
       </div>
       <div id="code">
         <div class="panel">
+          <button class="copyCode" onclick="copyCode()">Copy Example</button>
           <h1>Example Code</h1>
-          <pre>
+          <pre id="sourceCode">
             {%- highlight go linenos -%}
             {{- page.code -}}
             {%- endhighlight -%}

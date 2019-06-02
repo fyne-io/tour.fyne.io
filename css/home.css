@@ -31,11 +31,10 @@ html, body {
 
 #code pre {
   padding: 0;
+  margin-bottom: 0;
   border: none;
   background-color: #f0f0f0;
-}
 
-#code pre {
   font-size: smaller;
 }
 
@@ -51,6 +50,11 @@ html, body {
 #words .panel, #code .panel {
   padding: 5pt;
   padding-top: 46pt;
+}
+
+button.copyCode {
+  float: right;
+  margin: 10pt 5pt;
 }
 
 #tour-nav {
