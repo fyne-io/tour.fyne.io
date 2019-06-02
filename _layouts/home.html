@@ -31,10 +31,47 @@
       </div>
     </div>
 
+    {% assign url_parts = page.url | split: '/' %}
+    {% assign base_url = url_parts[1] %}
+
     <footer id="tour-nav">
-      <a href="#">&lt;</a>
-      1/1
-      <a href="#">&gt;</a>
+
+      {% assign count = 0 %}
+      {% assign current = 0 %}
+      {% assign pages = '' | split: '' %}
+
+      {% assign sortedPages = site.pages | sort:"order" %}
+      {% for node in sortedPages %}
+        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign filename = node_url_parts | last %}
+        {% if node_url_parts[1] == base_url and node.title != undefined %}
+
+          {% assign pageUrl = node.url | split: 'fake' %}
+          {% assign pages = pages | concat: pageUrl %}
+
+          {% if node.url == page.url %}
+          {% assign current = count %}
+          {% endif %}
+          {% assign count = count | plus:1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign currentPlus = current | plus:1 %}
+      {% if current > 0 %}
+        {% assign prev = current | minus:1 %}
+        <a href="{{ pages[prev] }}">&lt;</a>
+      {% else %}
+        <span class="disabled">&lt;</span>
+      {% endif %}
+
+      {{ currentPlus }}/{{ count }}
+
+      {% if currentPlus < count %}
+        {% assign next = currentPlus %}
+        <a href="{{ pages[next] }}">&gt;</a>
+      {% else %}
+        <span class="disabled">&gt;</span>
+      {% endif %}
     </footer>
   </body>
 </html>

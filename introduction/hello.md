@@ -1,7 +1,8 @@
 ---
 layout: home
 
-title: Welcome
+title: Introduction
+order: 1
 code: |
   package main
 
@@ -24,6 +25,10 @@ code: |
   	w.ShowAndRun()
   }
 
+redirect_from:
+  - /
+  - /introduction/
+
 ---
 
 Welcome to a tour of the [Fyne GUI Toolkit](https://fyne.io/).
@@ -37,4 +42,4 @@ and examples code associated with the content.
 You can navigate though the pages of this tour using the navigation arrows
 at the bottom of each page.
 
-When you are ready to get started click on the [right arrow](welcome2) below.
+When you are ready to get started click on the [right arrow](/introduction/golang) below.
