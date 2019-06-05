@@ -3,14 +3,6 @@ layout: home
 
 title: Building Code Samples
 order: 3
-code: |
-  package main
-
-  import "fmt"
-
-  func main() {
-  	fmt.Println("I am running on your computer")
-  }
 
 ---
 

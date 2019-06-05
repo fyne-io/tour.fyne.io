@@ -38,7 +38,8 @@
           <h1>Example Code</h1>
           <pre id="sourceCode">
             {%- highlight go linenos -%}
-            {{- page.code -}}
+            {% assign gofile = page.path | replace:'.md','.go' %}
+            {%- include {{ gofile }} -%}
             {%- endhighlight -%}
           </pre>
         </div>

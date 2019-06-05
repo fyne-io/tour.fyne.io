@@ -3,22 +3,6 @@ layout: home
 
 title: Introduction
 order: 1
-code: |
-  package main
-
-  import (
-  	"fyne.io/fyne/widget"
-  	"fyne.io/fyne/app"
-  )
-
-  func main() {
-  	app := app.New()
-
-  	w := app.NewWindow("Hello")
-  	w.SetContent(widget.NewLabel("Hello Fyne!"))
-
-  	w.ShowAndRun()
-  }
 
 redirect_from:
   - /

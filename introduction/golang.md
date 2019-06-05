@@ -3,14 +3,6 @@ layout: home
 
 title: Programming with Go
 order: 2
-code: |
-  package main
-
-  import "fmt"
-
-  func main() {
-  	fmt.Println("Hello, Fyne Tour!")
-  }
 
 ---
 
