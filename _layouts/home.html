@@ -37,10 +37,18 @@
           <button class="copyCode" onclick="copyCode()">Copy Example</button>
           <h1>Example Code</h1>
           <pre id="sourceCode">
+            {%- assign type = page.include | default: "go" -%}
+            {% if type == "go" %}
             {%- highlight go linenos -%}
             {% assign gofile = page.path | replace:'.md','.go' %}
             {%- include {{ gofile }} -%}
             {%- endhighlight -%}
+            {% else if type == "sh" %}
+            {%- highlight sh linenos -%}
+            {% assign gofile = page.path | replace:'.md','.sh' %}
+            {%- include {{ gofile }} -%}
+            {%- endhighlight -%}
+            {% endif %}
           </pre>
         </div>
       </div>
