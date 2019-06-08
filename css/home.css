@@ -63,6 +63,7 @@ button.copyCode {
 
 .highlight .lineno {
   padding-right: 2pt !important;
+  min-width: 13pt;
 }
 
 .highlight .code {
