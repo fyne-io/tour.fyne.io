@@ -1,7 +1,7 @@
 ---
 layout: home
 
-title: Organisation and Packaged
+title: Organisation and Packages
 order: 5
 
 ---
