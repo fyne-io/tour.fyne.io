@@ -19,10 +19,7 @@ An application should only have one runloop and so you should only
 call `Run()` once in your code. Calling it a second time will cause
 errors.
 
-The helper method `ShowAndRun()` on `fyne.Window` allows you to
-show your window and run the application at the same time.
-If you wish to show a second window you must only call the `Show()`
-function. This is illustrated in the `showAnother` function.
-
+An app can be quit directly by calling `App.Quit()` but this should
+only be called in response to a user event to avoid surprises.
 See also that functions executed after `Run()` will not be called
 until the application exits.
