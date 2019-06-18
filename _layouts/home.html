@@ -28,6 +28,9 @@
     <div id="content">
       <div id="words">
         <div class="panel">
+          {% if page.since %}
+          <code class="since">Since {{ page.since }}</code>
+          {% endif %}
           <h1>{{ page.title }}</h1>
           {{ content }}
         </div>

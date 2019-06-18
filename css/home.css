@@ -31,7 +31,7 @@ body {
 
   tab-size: 20pt;
   background-color: #f0f0f0;
-  border-left: 5px solid #c0c0c0;
+  border-left: 3pt solid #c0c0c0;
 }
 
 #code pre {
@@ -56,9 +56,19 @@ body {
   padding: 46pt 5pt 10pt;
 }
 
+#words .panel {
+  padding-right: 8pt
+}
+
 button.copyCode {
   float: right;
   margin: 10pt 5pt;
+}
+
+code.since {
+  float: right;
+  margin: 5pt 0;
+  font-size: small;
 }
 
 .highlight .lineno {

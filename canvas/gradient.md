@@ -4,6 +4,7 @@ layout: home
 title: Gradient
 order: 7
 
+since: 1.1
 ---
 
 The last canvas primitive type is Gradient, available as
