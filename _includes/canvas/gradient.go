@@ -11,8 +11,8 @@ func main() {
 	myApp := app.New()
 	w := myApp.NewWindow("Gradient")
 
-	gradient := canvas.NewLinearGradient(color.White, color.Transparent,
-		canvas.GradientDirectionHorizontal)
+	gradient := canvas.NewHorizontalGradient(color.White, color.Transparent)
+//	gradient := canvas.NewRadialGradient(color.White, color.Transparent)
 	w.SetContent(gradient)
 
 	w.Resize(fyne.NewSize(100, 100))
