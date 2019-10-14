@@ -11,7 +11,7 @@ import (
 
 func main() {
 	myApp := app.New()
-	myWindow := myApp.NewWindow("Box Layout")
+	myWindow := myApp.NewWindow("Fixed Grid Layout")
 
 	text1 := canvas.NewText("1", color.White)
 	text2 := canvas.NewText("2", color.White)
