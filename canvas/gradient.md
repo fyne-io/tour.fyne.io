@@ -19,4 +19,5 @@ in between is calculated by the canvas. In this example we use
 use an alpha value to be semi-transparent over the content behind.
 
 That's it for our tour of the canvas elements in Fyne. Next take some 
-time to learn about the various `Widget`s available.
+time to learn about the [`Layout`s](../layout/) available to arrange
+interface elements.

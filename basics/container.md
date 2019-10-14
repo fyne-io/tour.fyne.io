@@ -23,3 +23,4 @@ and try resizing the window to see how the layout automatically configures
 the contents of the window. Notice also that the manual position
 of `text2` is ignored by the layout code.
 
+To find out more jump to the [`Layout`](../layout/) section of this tour.
