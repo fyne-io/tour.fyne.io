@@ -11,7 +11,7 @@ redirect_from:
 
 `canvas.Rectangle` is the simplest canvas object in Fyne. It displays
 a block of the specified colour. You can also set the colour using
-the 'FillColor' field.
+the `FillColor` field.
 
 In this example the rectangle fills the window as it is
 the only content element.
