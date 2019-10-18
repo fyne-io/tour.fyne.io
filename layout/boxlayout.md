@@ -9,6 +9,10 @@ redirect_from:
 
 ---
 
+As discussed in [Container and Layouts](/basics/container.html) elements
+within a container can be arranged using a layout. This section explores
+the builtin layouts and how to use them.
+
 The most commonly used layout is `layout.BoxLayout` and it has two variants,
 horizontal and vertical. A box layout arranges all elements in a single
 row or column with optional spaces to assist alignment.
