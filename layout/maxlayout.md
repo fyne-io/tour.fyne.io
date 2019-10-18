@@ -14,3 +14,7 @@ widgets
 The max layout will expand the container to be at least the size of the
 largest item's minimum size. The objects will be drawn in the order
 the are passed to the container, with the last being drawn top-most.
+
+Now that we know how to lay out a user interface we will
+move on to the [`Widget`s](../widget/) that are available
+to create your application.
