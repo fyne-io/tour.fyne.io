@@ -24,19 +24,19 @@ func main() {
 }
 
 func changeContent(c fyne.Canvas) {
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 
 	c.SetContent(canvas.NewRectangle(color.Black))
 
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 	c.SetContent(canvas.NewLine(color.Gray{0x66}))
 
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 	circle := canvas.NewCircle(color.White)
 	circle.StrokeWidth = 4
 	circle.StrokeColor = color.RGBA{0xff, 0x33, 0x33, 0xff}
 	c.SetContent(circle)
 
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 	c.SetContent(canvas.NewImageFromResource(theme.FyneLogo()))
 }
