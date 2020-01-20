@@ -49,9 +49,15 @@
           <button class="copyCode" onclick="copyCode()">Copy Example</button>
           <h1>Example Code</h1>
           <pre id="sourceCode">
-            {%- highlight {{ type }} linenos -%}
+            {% if type == "go" %}
+            {%- highlight go linenos -%}
             {%- include {{ gofile }} -%}
             {%- endhighlight -%}
+            {% else if type == "sh" %}
+            {%- highlight sh linenos -%}
+            {%- include {{ gofile }} -%}
+            {%- endhighlight -%}
+            {% endif %}
           </pre>
         </div>
       </div>
