@@ -13,12 +13,15 @@
         </span>
       </label>
 
+      {% assign url_parts = page.url | split: '/' %}
+      {% assign base_url = url_parts[1] %}
+
       <div class="trigger">
-        <a class="page-link" href="/introduction/">Introduction</a>
-        <a class="page-link" href="/basics/">Basics</a>
-        <a class="page-link" href="/canvas/">Canvas</a>
-        <a class="page-link" href="/layout/">Layout</a>
-        <a class="page-link" href="/widget/">Widget</a>
+        <a class="page-link{% if base_url == "introduction" %} active{% endif %}" href="/introduction/">Introduction</a>
+        <a class="page-link{% if base_url == "basics" %} active{% endif %}" href="/basics/">Basics</a>
+        <a class="page-link{% if base_url == "canvas" %} active{% endif %}" href="/canvas/">Canvas</a>
+        <a class="page-link{% if base_url == "layout" %} active{% endif %}" href="/layout/">Layout</a>
+        <a class="page-link{% if base_url == "widget" %} active{% endif %}" href="/widget/">Widget</a>
       </div>
     </nav>
   </div>
