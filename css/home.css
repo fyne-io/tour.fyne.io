@@ -127,3 +127,7 @@ code.since {
   background-color: #fff;
 }
 
+
+.page-link.active {
+    text-decoration: underline;
+}
