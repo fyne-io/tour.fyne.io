@@ -7,7 +7,7 @@ order: 6
 ---
 
 The form widget is used to lay out many input fields with
-labels and optional cancel and submit buttons. In it's most
+labels and optional cancel and submit buttons. In its most
 bare form it aligns labels to the left of each input widget.
 By setting OnCancel or OnSubmit the form will add a button
 bar with the specified handlers called when appropriate.
