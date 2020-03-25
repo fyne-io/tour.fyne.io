@@ -12,7 +12,7 @@ redirect_from:
 
 Welcome to a tour of the [Fyne GUI Toolkit](https://fyne.io/).
 
-The tour is divded into lists of areas that you can access through the menu
+The tour is divided into lists of areas that you can access through the menu
 items at the top, right menu of this page.
 
 Throughout this tour you will find a series of descriptions of Fyne features
