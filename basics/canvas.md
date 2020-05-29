@@ -18,6 +18,6 @@ There are many ways that each type of object can be customised as
 shown with the text and circle examples. 
 
 As well as changing the content shown using `Canvas.SetContent()` it is
-possible to change the content that is shown. If, for example, you
+possible to refresh the content that is shown. If, for example, you
 change the colour of a rectangle you can request a refresh of this
 existing component using `canvas.Refresh(rect)`.
