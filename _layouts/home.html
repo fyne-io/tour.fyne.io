@@ -3,6 +3,12 @@
   <head>
     <title>{% if page.url != "/" %}{{ page.title }} | {% endif %}Fyne Tour</title>
 
+    <meta http-equiv="refresh" content="1;url=https://developer.fyne.io/tour{{ page.url }}"/>
+    <link rel="canonical" href="https://developer.fyne.io/tour{{ page.url }}"/>
+    <script type="text/javascript">
+            window.location.href = "https://developer.fyne.io/tour{{ page.url }}"
+    </script>
+
     <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="/css/home.css" type="text/css" />
 
